@@ -68,7 +68,7 @@ public class PowerManagement extends CordovaPlugin {
 					result = this.acquire( PowerManager.SCREEN_DIM_WAKE_LOCK );
 				}
 				else {
-					result = this.acquire( PowerManager.FULL_WAKE_LOCK | PowerManager.ACQUIRE_CAUSES_WAKEUP );
+					result = this.acquire( PowerManager.SCREEN_BRIGHT_WAKE_LOCK | PowerManager.ACQUIRE_CAUSES_WAKEUP);
 				}
 			} else if( action.equals("release") ) {
 				result = this.release();
